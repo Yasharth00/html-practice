@@ -1,0 +1,38 @@
+body{
+    background-color: #c5a1da7e;
+    color: rgb(219, 90, 111);
+    font-family: sans-serif;
+    padding: 20px;
+}
+h1{
+    color: rgb(241, 5, 44);
+    font-size: 36px;
+    border-inline: 3px solid;
+    border-color: rgb(43, 223, 67);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgb(5, 241, 25);
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.cat_image_1{
+    border: 3px solid;
+    border-radius: 10px ;
+    border-color: red;
+    box-shadow: 0 4px  10px rgb(221, 15, 42);
+}
+.lasagna{
+    border: 3px solid;
+    border-radius: 10px ;
+    border-color: rgb(232, 235, 62);
+    box-shadow: 0 5px  10px rgb(236, 175, 43);
+}
+.cats{
+    border: 3px solid;
+    border-radius: 10px ;
+    border-color: rgb(43, 236, 175);
+    box-shadow: 0 5px  10px rgb(43, 175, 236);
+}

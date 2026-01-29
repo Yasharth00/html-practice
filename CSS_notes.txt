@@ -1,0 +1,6 @@
+CSS - Cascading Style Sheets
+CSS Style - Made up of CSS rules 
+Rules - Made up of 2 parts {"selector" and a "declaration" block}
+Syntax : selector {
+    property: value;
+}

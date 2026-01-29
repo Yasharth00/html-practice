@@ -1,0 +1,17 @@
+#🧾GIT PUSH CHEAT SHEET (for existing project)
+✅ After you make changes:
+
+git add .
+git commit -m "your message"
+git push
+
+
+#🧾CHEAT SHEET (for new project)
+Only when you start a fresh project and want to push it:
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+git push -u origin main
