@@ -2,6 +2,10 @@ body{
     background-color: #c5a1da7e;
     color: rgb(219, 90, 111);
     font-family: sans-serif;
+    font-style: italic;
+    font-variant:  small-caps;
+    font-feature-settings: "smcp", "c2sc";
+    font-size: x-large;
     padding: 20px;
 }
 h1{
