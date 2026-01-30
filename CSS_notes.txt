@@ -4,3 +4,13 @@ Rules - Made up of 2 parts {"selector" and a "declaration" block}
 Syntax : selector {
     property: value;
 }
+i can use <div></div> element for style part by giving it an id attribute with some value and then using #id_value for styling in CSS filee
+commenting in css - syntax : /* comment */
+use width to change the area/size of the element wrt to the parent body
+use margin with auto value to adjust the margins of an element automatically with the body 
+i can put an background image but using background-image property and setting a url as the value (NOTE: the value should be in the format url(THE_IMAGE_URL);)  
+<article> element - contains mutliple elements that have realted information
+display: inline-block - it uses the width value to orient the elements instead of the text-align property
+Styling the p elements as inline-block and placing them on separate lines creates an extra space to the right of the first p element, causing the second one to shift to the next line.
+One way to fix that is to make each p element's width slightly less than 50%. So, change the width value to 49% for each class to see what happens.But there will be still some space left to the right of the price element so to fix that 
+use backsapce and move the p element with pice class to the p element with flavor class such that there is no space between them and then change the width of both the elements to 50%
