@@ -14,3 +14,22 @@ display: inline-block - it uses the width value to orient the elements instead o
 Styling the p elements as inline-block and placing them on separate lines creates an extra space to the right of the first p element, causing the second one to shift to the next line.
 One way to fix that is to make each p element's width slightly less than 50%. So, change the width value to 49% for each class to see what happens.But there will be still some space left to the right of the price element so to fix that 
 use backsapce and move the p element with pice class to the p element with flavor class such that there is no space between them and then change the width of both the elements to 50%
+You can add a fallback value for the font-family by adding another font name separated by a comma. Fallbacks are used in instances where the initial is not found/available. By using comma.
+The <address> element in HTML is used to define contact information for the author, owner, or organization associated with a document, article, or section of a webpage.
+<hr> element is used to display a divide line between sections of different content (its a void element)
+The default value of a property named border-width is 1px for all edges of hr elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px).
+padding pads the elements nested inside that elemet/class wrt the parent element/class.
+i can also style the anchor element <a> by chaning the color of the link using color property
+i can change the color of the link when its been visited by, sytanx - a:visited {property_name: value}
+I change the properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; }.
+i change the properties of a link when the link is being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }.
+img elements are "like" inline elements.
+To make the image behave like block-level elements such as headings, create an img type selector. Set the display property to block, and use margin-left and margin-right properties to center it horizontally.
+It would be nice if the vertical space between the h2 elements and their associated icons was smaller. The h2 elements have default top and bottom margin space, so you could change the bottom margin of the h2 elements to say 0 or another number.
+There is an easier way, simply add a negative top margin to the img elements to pull them up from their current positions. Negative values are created using a - in front of the value.
+to make the the page compatible with all devices add <meta name="viewport" content="width=device-width, initial-scale=1.0" /> in the head element
+i can remove the underlines from all the links using a{text-decoration: none;}
+inline styles have a higher specificity than type selectors.Following this, ID selectors have a high level of specificity.Next, class selectors, attribute selectors, and pseudo-classes come into play.
+Examples include class selectors such as .container and .button, attribute selectors like [type="text"], and pseudo-classes such as :hover. These have a moderate level of specificity.Type selectors, such as div and h1, and pseudo-elements like ::before and ::after, have a lower specificity compared to the previous groups.
+Finally, the universal selector, represented by an asterisk *, has the lowest specificity of all.
+example - setting the color for all elements to red using the * selector.
