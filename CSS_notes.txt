@@ -33,3 +33,32 @@ inline styles have a higher specificity than type selectors.Following this, ID s
 Examples include class selectors such as .container and .button, attribute selectors like [type="text"], and pseudo-classes such as :hover. These have a moderate level of specificity.Type selectors, such as div and h1, and pseudo-elements like ::before and ::after, have a lower specificity compared to the previous groups.
 Finally, the universal selector, represented by an asterisk *, has the lowest specificity of all.
 example - setting the color for all elements to red using the * selector.
+
+
+FLEXBOX-
+box-sizing propert uses content-box and border-box
+conten-box and border-box difference ??
+can use text-transfor: uppercase to set the alphabets to uppercase.
+remember border-bottom
+padding property set to 20px 10px to create some space around the container. that is padding can contain 2 values, explore more.
+always remember to give width and max width to the elemets 
+margin: 0 auto is used to center the element.
+Notice how some of your images have become distorted. This is because the images have different aspect ratios. Rather than setting each aspect ratio individually, you can use the object-fit property to determine how images should behave.
+
+Give your .gallery img selector the object-fit property and set it to cover. This will tell the image to fill the img container while maintaining aspect ratio, resulting in cropping to fit.
+The gap CSS shorthand property sets the gaps, also known as gutters, between rows and columns.( also have row-gap and column-gap properties)
+The ::after pseudo-element creates an element that is the last child of the selected element. You can use it to add an empty element after the last image. If you give it the same width as the images it will push the last image to the left when the gallery is in a two-column layout. Right now, it is in the center because you set justify-content: center on the flex container.
+
+Example:
+
+Example Code
+.container::after {
+  content: "";
+  width: 860px;
+}
+gap property in css is used to set the gap between the elements.
+assign none to text-decoration to remove the underline of the href link.
+letter-spacing property is used to provide spaces between the letters.
+font-weight property is used to give thickness to the text.
+Position: relative in CSS allows an element to be adjusted from its normal position in the document flow while still maintaining its original space.  This means the element can be shifted using top, right, bottom, or left properties, but other elements on the page will not fill the gap left behind. 
+VERY IMPORTANT - we can add two classes to the same element by separating the two classes with a single space.
