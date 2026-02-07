@@ -129,22 +129,35 @@ p{
     margin-bottom: 12px;
 }
 .features {
-    padding: 60px 32px;
+    padding:   0 32px;
     text-align: center;
 }
 .features-title {
-    font-size: 28px;
-    margin-bottom: 32px;
+    font-size: 32px;
+    margin-bottom: 56px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    
+}
+.features-title::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    background-color: currentColor;
+    margin: 8px 45% 0;
+
 }
 .cards {
     display: flex;
     gap: 24px;
+    padding-bottom: 50px;
     justify-content: center; /*it there is extra space inside .cards then it distributes it so the cards sit in the center*/
     
 }
 .card:hover {
-    transform: scale(1.03);
-    transition: 0.3s ease;
+    transform: translateY(-4px);
 }
 .card {
     display: flex;
@@ -155,8 +168,42 @@ p{
     padding: 24px;
     max-width: 280px;
     border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    background-color:  rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease;
 }
-
+.card h3 {
+    font-size: 24px;
+}
+.card p {
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 85%;
+}
+.about {
+    padding: 80px 32px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.about-text {
+    flex:1;
+    text-align: center;
+}
+.about-image {
+    flex: 1;
+}
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
 @media (max-width: 468px) {
     .header {
         padding: 20px;
@@ -180,6 +227,8 @@ p{
         flex-direction: column;
         gap: 12px;
     }
+
+    
     body {
         font-size: 16px;
     }
@@ -190,8 +239,39 @@ p{
     .cards {
         flex-direction: column;
         align-items: center; /*keep it mine these small details that dont matter much as its alr centered ig but should be applied for perfection.*/
+        gap: 30px;
+        padding-bottom: 50px;
     }
     .card {
         max-width: 100%; /*its important to set it at 100% becuase we want the cards to be full sized on the phone*/
+        padding: 20px
+    }
+
+
+    .about-text{
+        order: 2;
+    }
+    .about-image {
+        order: 1;
+    }
+    .about-container {
+        flex-direction: column;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        
+    }
+    .about {
+        padding: 60px 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .about-text {
+        text-align: left;
     }
 }
