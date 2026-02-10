@@ -62,3 +62,60 @@ letter-spacing property is used to provide spaces between the letters.
 font-weight property is used to give thickness to the text.
 Position: relative in CSS allows an element to be adjusted from its normal position in the document flow while still maintaining its original space.  This means the element can be shifted using top, right, bottom, or left properties, but other elements on the page will not fill the gap left behind. 
 VERY IMPORTANT - we can add two classes to the same element by separating the two classes with a single space.
+use text-transform to set text to uppercase.
+box-shadow: 0 4px 10px white; REMEMBER THIS .
+REMEMBER : line-height for p element
+REMEBER the @media styling from style.css file.
+One core rule to remember (write this mentally)
+
+When something gets smaller, its surrounding space must also get smaller.
+text-align DOES NOT WORK ON BLOCK ELEMENTS and only works on INLINE ELEMENTS.
+Text-align works when you want to align inline content (like text, inline elements) inside a container,
+while margin: auto is used to center a block element itself inside its parent.
+Margin is for spacing between siblings.
+Padding is for spacing between a container and its contents or surroundings.
+One sentence you should remember (this is gold)
+
+If spacing defines where a section ends, it belongs to the section — not the items inside it.
+use margin: 0 auto; to center the items.
+
+display: block;
+This is subtle but important.
+By default:
+<img> is an inline element
+Inline elements have weird spacing under them
+display: block:
+Removes bottom whitespace
+Makes margin and width behave predictably
+This is a fix, not decoration.
+
+height: auto;
+This means:
+“Adjust height automatically to maintain aspect ratio”
+Why this matters:
+Prevents image stretching
+Keeps proportions correct
+Never distort images
+You should almost always use this with responsive images.
+use text-transform to change it to uppercase/lowercase.
+height: auto --- keeps aspect ratio fixed.
+overflow: hidden --- forces the images to stay inside.
+What horizontal scroll means
+
+If the page scrolls sideways even a little, something is wider than the viewport.
+
+On mobile, the usual culprits are:
+
+Images
+
+Fixed widths
+
+100vw
+
+Negative margins
+
+Borders + padding without box-sizing
+
+
+
+CTA - Call To Action:

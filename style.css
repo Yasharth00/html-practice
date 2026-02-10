@@ -1,3 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: #0f172a;
     color: #e5e7eb;
@@ -8,6 +15,12 @@ body{
     font-size: x-large;
     padding: 20px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 h{
     color: rgb(241, 5, 44);
     font-size: 36px;
@@ -24,6 +37,9 @@ p{
 }
 .cat_image_1{
     border: 3px solid;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px ;
     border-color: red;
     box-shadow: 0 4px  10px rgb(221, 15, 42);
@@ -31,6 +47,9 @@ p{
 }
 .lasagna{
     border: 3px solid;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px ;
     border-color: rgb(232, 235, 62);
     box-shadow: 0 5px  10px rgb(236, 175, 43);
@@ -38,9 +57,22 @@ p{
 }
 .cats{
     border: 3px solid;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px ;
     border-color: rgb(43, 236, 175);
     box-shadow: 0 5px  10px rgb(43, 236, 175);
+}
+figure {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+figure img.lasagna, img.cat_image_1, img.cats {
+    width: 100%;
+    border-radius: 12px;    
 }
 .container {
     max-width:800px;
@@ -48,6 +80,7 @@ p{
     padding: 24px;
     background-color: #020617;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .header {
@@ -282,34 +315,77 @@ p{
     margin: 0 auto;
 }
 .progress-title {
-    font-size: 32px;
+    font-size: 34px;
+    letter-spacing: 0.06em;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 74px;
+    opacity: 0.9;
 }
 .progress-cards {
     display: flex;
-    gap: 32px;
+    gap: 50px;
+    margin: 0 auto;
     justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 .progress-card {
-    padding: 24px;
-    max-width: 280px;
-    border: 1px solid rgba(255, 255, 255, 0.15)
+    padding: 28px 28px 32px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.25 ease;
+    text-align: center;
 }
 .progress-card h3 {
     font-size: 24px;
-    margin-bottom: 12px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    letter-spacing: 0.4;
 }
 .progress-card p {
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
     opacity: .85;
+    margin-bottom: 12px;
+}
+.progress-card:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+
+.direction {
+    padding: 120px 20px;
+}
+.direction-container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.direction-title {
+    font-size: 30px;
+    margin-bottom: 32px;
+    letter-spacing: 0.04em;
+}
+.direction-lead {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    opacity: 0.9;    
+}
+.container-text {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.8;
 }
 
 @media (max-width: 768px) {
     .header {
         padding: 20px;
         margin-bottom: 20px;
+        text-align: center;
     }
     .hero {
         margin-top: 20px;
@@ -372,6 +448,8 @@ p{
         justify-content: center;
         text-align: center;
         flex-direction: column;
+        width: 100%;
+        max-width: 280px;
     }
 }
 
